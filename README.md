@@ -1,9 +1,11 @@
 # FaAng - DDoS Tools
 <img src="https://img.shields.io/badge/Python-3.11-blue"></img><br>
 This script was created for ethnical hacking purposes and is only for WebDev's benefit
-<img src="https://help.mikrotik.com/docs/download/attachments/28606504/Untitled%20Diagram%20%281%29.jpg?version=1&modificationDate=1590666013808&api=v2"/>
+<img src="https://static.javatpoint.com/blog/images/what-is-ddos-attack.png"/>
 # Warning
-This script is intended only for education and is only used for penetration tests, if you misuse this script, the script owner is not responsible 
+THE OWNER OF THESE TOOLS (Dx4) WILL NOT BE RESPONSIBLE FOR ANY DAMAGE CAUSED BY THE USER OWN THEREFORE, USE THESE TOOLS ONLY TO TEST YOUR OWN SITE FOR vulnerabilities ATTACKING SITES OWNED BY OTHERS, FAANG SHOULD NOT BE USED FOR ILLEGAL ACTIVITIES, BY USING THIS SOFTWARE, YOU MUST AGREE TO BE FULLY RESPONSIBLE FOR DAMAGE CAUSED BY FAANG IN ANY WAY TO YOUR OWN. THE CREATORS DO NOT WANT PEOPLE TO USE FAANG IF THEY HAVE NO EXPERIENCE WITH ATTACKS INCLUDING. ANY ATTACK WILL CAUSE TEMPORARY DAMAGE, BUT LONG TERM DAMAGE IS POSSIBLE. RAVEN-STORM SHOULD NOT ADVISE PEOPLE TO DO ILLEGAL ACTIVITIES.
+
+agung
 # Installation
   
 Installation support for Linux And Termux Android
