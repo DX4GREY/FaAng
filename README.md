@@ -1,6 +1,7 @@
 # FaAng - DDoS Tools
 <img src="https://img.shields.io/badge/Python-3.11-blue"></img><br>
 This script was created for ethnical hacking purposes and is only for WebDev's benefit
+<img src="https://spanning.com/wp-content/uploads/2020/06/denial-of-service-attack-example.png"/>
 # Warning
 This script is intended only for education and is only used for penetration tests, if you misuse this script, the script owner is not responsible 
 # Installation
