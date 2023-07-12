@@ -1,6 +1,6 @@
 # FaAng - DDoS Tools
 <img src="https://img.shields.io/badge/Python-3.11-blue"></img>
-
+This script was created for ethnical hacking purposes and is only for WebDev's benefit
 # Installation
   
 Installation support for Linux And Termux Android
