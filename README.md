@@ -1,5 +1,5 @@
 # FaAng - DDoS Tools
-<img src="https://img.shields.io/badge/Python-3.11-blue"></img>
+<img src="https://img.shields.io/badge/Python-3.11-blue"></img><br>
 This script was created for ethnical hacking purposes and is only for WebDev's benefit
 # Installation
   
@@ -14,7 +14,7 @@ git clone https://github.com/DX4GREY/FaAng
 cd FaAng
 ./setup.sh
  ```
-Android - Linux
+Android - Termux
 ```bash
 pkg update
 pkg upgrade
