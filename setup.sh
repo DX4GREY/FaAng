@@ -27,7 +27,16 @@ install_packages() {
 
         echo "Installing requests..."
         python -m pip install requests
-
+        
+        echo "Installing httpx..."
+        python -m pip install httpx
+        
+        echo "Installing undetected_chromedriver..."
+        python -m pip install undetected_chromedriver
+        
+        echo "Installing cloudscraper..."
+        python -m pip install cloudscraper
+        
         echo "Package installation completed."
     else
         echo "pip is not installed. Cannot proceed with package installation."
@@ -47,6 +56,12 @@ install_kali() {
     install_pip
     install_packages
     run_faang_script
+    
+    DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+    mkdir -p $HOME/.faang
+    cp $DIR/faang.py $HOME/.faang/faang.py
+    echo "python $HOME/.faang/faang.py" | sudo tee /usr/local/bin/faang > /dev/null
+    chmod +x /usr/local/bin/faang
 }
 
 install_termux() {
@@ -58,6 +73,10 @@ install_termux() {
     install_pip
     install_packages
     run_faang_script
+
+    mv "$(cd "$(dirname "$0")" && pwd)" $HOME/.faang
+    echo "python $HOME/.faang" > $PREFIX/bin/faang
+    chmod +x $PREFIX/bin/faang
 }
 
 install_ubuntu() {
@@ -69,6 +88,12 @@ install_ubuntu() {
     install_pip
     install_packages
     run_faang_script
+    
+    DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+    mkdir -p $HOME/.faang
+    cp $DIR/faang.py $HOME/.faang/faang.py
+    echo "python $HOME/.faang/faang.py" | sudo tee /usr/local/bin/faang > /dev/null
+    chmod +x /usr/local/bin/faang
 }
 
 detect_platform() {
@@ -90,7 +115,9 @@ detect_platform() {
 }
 
 clear
-echo "Automatic Platform Detection"
+echo "╔══╗────╔══╗───────  ╔══╗╔══╗───╔══╗\n║═╦╝╔═╗─║╔╗║╔═╦╗╔═╗  ╚╗╗║╚╗╗║╔═╗║══╣\n║╔╝─║╬╚╗║╠╣║║║║║║╬║  ╔╩╝║╔╩╝║║╬║╠══║\n╚╝──╚══╝╚╝╚╝╚╩═╝╠╗║  ╚══╝╚══╝╚═╝╚══╝\n────────────────╚═╝  ───────────────"
 echo "============================"
+echo "Waiting For Install"
+sleep 3
 
 detect_platform
